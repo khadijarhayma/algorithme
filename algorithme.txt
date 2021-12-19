@@ -1,0 +1,21 @@
+algorithme phrase
+var
+i,j,k nbv,nbm:integer
+BEGIN
+ for i from 1 to (length(phrase)+1)do
+    read(phrase);
+phrase[length+1]:=. ;
+end for
+for j from 1 to (length(phrase)+1) do
+j:=j+1;
+write(j)
+end for
+for k from 1 to (length(phrase)+1) do
+if phrase[k] in ( 'a' 'e' 'y' 'u' 'i' 'o') then
+nbv:=nbv+1;
+end if
+if phrase[k] =' ' then
+nbm:=nbm+1
+end if
+end for
+END
